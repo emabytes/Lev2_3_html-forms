@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Register Form</legend>
+            <div>
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+            </div>
+
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male" class="short-label">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female" class="radio-label">Female</label>
+            </div>
+
+            <div>
+                <label for="picture-upload">Picture</label>
+                <input type="file" name="picture-upload" id="picture-upload">
+
+            </div>
+
+            <div>
+                <label for="country-select">Country</label>
+                <select name="countries" id="country-select">
+                    <option value="germany">Germany</option>
+                    <option value="italy">Italy</option>
+                    <option value="france">France</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="languages">Preferred languages</label>
+                <select name="languages" id="languages" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="js">Java</option>
+                    <option value="other">Other</option>
+                </select>
+                <span>(To choose more than one use cmd key)</span>
+            </div>
+
+            <label for="activity" class="inline-b">Field of activity</label>
+            <input type="checkbox" name="activity" id="it">
+            <label for="it">IT</label>
+
+            <input type="checkbox" name="design" id="design">
+            <label for="design">Design</label>
+            <input type="checkbox" name="activity-other" id="activity-other">
+            <label for="other">Other</label>
+
+            <div>
+                <input type="button" value="Send" class="btn">
+                <input type="reset" value="Cancel" class="btn">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
