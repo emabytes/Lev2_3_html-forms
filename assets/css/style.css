@@ -62,3 +62,8 @@ legend {
 ::placeholder {
     font-family: 'Lato', sans-serif;
 }
+
+.middle {
+    position: relative;
+    top: -40px;
+}
